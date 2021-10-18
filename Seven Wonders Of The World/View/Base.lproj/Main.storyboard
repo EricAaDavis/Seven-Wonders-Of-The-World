@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BIA-iM-kbv">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ExD-dw-I83">
+            <objects>
+                <viewController id="BIA-iM-kbv" customClass="ViewController" customModule="Seven_Wonders_Of_The_World" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vCt-E7-7cL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Lb9-Ua-WbR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="403"/>
+                            </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" sectionIndexMinimumDisplayRowCount="1" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hKz-fC-GLz">
+                                <rect key="frame" x="0.0" y="403" width="414" height="493"/>
+                                <color key="backgroundColor" systemColor="systemFillColor"/>
+                                <color key="separatorColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" systemColor="systemFillColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="90" id="bvS-MD-fLh" customClass="WonderCell" customModule="Seven_Wonders_Of_The_World" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="49.5" width="374" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bvS-MD-fLh" id="nDM-aO-IT6">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94P-lR-BK1">
+                                                    <rect key="frame" x="20" y="10" width="35" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Desctiption" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKA-XS-3mm">
+                                                    <rect key="frame" x="20" y="35.5" width="260" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="ELf-T7-NTk"/>
+                                                        <constraint firstAttribute="width" constant="260" id="PhK-vf-7xv"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YwQ-JD-rhx">
+                                                    <rect key="frame" x="295" y="29.5" width="51" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="YwQ-JD-rhx" secondAttribute="trailing" constant="10" id="2yn-kz-GOa"/>
+                                                <constraint firstItem="YwQ-JD-rhx" firstAttribute="centerY" secondItem="nDM-aO-IT6" secondAttribute="centerY" id="JpK-zU-ImX"/>
+                                                <constraint firstItem="iKA-XS-3mm" firstAttribute="leading" secondItem="nDM-aO-IT6" secondAttribute="leading" constant="20" id="Vay-1t-fRe"/>
+                                                <constraint firstItem="94P-lR-BK1" firstAttribute="leading" secondItem="nDM-aO-IT6" secondAttribute="leading" constant="20" id="l9F-ee-8sO"/>
+                                                <constraint firstItem="94P-lR-BK1" firstAttribute="top" secondItem="nDM-aO-IT6" secondAttribute="top" constant="10" id="pEf-6i-vCL"/>
+                                                <constraint firstItem="iKA-XS-3mm" firstAttribute="top" secondItem="94P-lR-BK1" secondAttribute="bottom" constant="5" id="yS5-K3-Fwp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="beenSwitch" destination="YwQ-JD-rhx" id="igv-Lt-JLo"/>
+                                            <outlet property="descriptionLabel" destination="iKA-XS-3mm" id="utW-qT-3X2"/>
+                                            <outlet property="title" destination="94P-lR-BK1" id="cax-ES-hvh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lxp-WI-pg2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hKz-fC-GLz" secondAttribute="bottom" id="2RV-Rh-gpS"/>
+                            <constraint firstItem="Lxp-WI-pg2" firstAttribute="trailing" secondItem="hKz-fC-GLz" secondAttribute="trailing" id="6PK-Zi-6pd"/>
+                            <constraint firstItem="hKz-fC-GLz" firstAttribute="leading" secondItem="Lxp-WI-pg2" secondAttribute="leading" id="99P-91-v1U"/>
+                            <constraint firstItem="Lxp-WI-pg2" firstAttribute="trailing" secondItem="Lb9-Ua-WbR" secondAttribute="trailing" id="Ugq-aI-Rgs"/>
+                            <constraint firstItem="Lb9-Ua-WbR" firstAttribute="top" secondItem="vCt-E7-7cL" secondAttribute="top" id="fco-HK-Icj"/>
+                            <constraint firstItem="Lb9-Ua-WbR" firstAttribute="height" secondItem="vCt-E7-7cL" secondAttribute="height" multiplier="0.45" id="ghd-Rq-Hs0"/>
+                            <constraint firstItem="Lb9-Ua-WbR" firstAttribute="leading" secondItem="Lxp-WI-pg2" secondAttribute="leading" id="jeD-Kx-j65"/>
+                            <constraint firstItem="hKz-fC-GLz" firstAttribute="top" secondItem="Lb9-Ua-WbR" secondAttribute="bottom" id="qSY-T4-Cdm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Lb9-Ua-WbR" id="r9U-2H-UK4"/>
+                        <outlet property="tableView" destination="hKz-fC-GLz" id="Osl-cd-UtT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BZq-XZ-pDv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2059.4202898550725" y="-203.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
