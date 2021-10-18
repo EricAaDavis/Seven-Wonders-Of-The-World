@@ -12,8 +12,6 @@
 		20DFA9AD271D79F800465BE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20DFA9AB271D79F800465BE0 /* Main.storyboard */; };
 		20DFA9AF271D79FE00465BE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20DFA9AE271D79FE00465BE0 /* Assets.xcassets */; };
 		20DFA9B2271D79FE00465BE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20DFA9B0271D79FE00465BE0 /* LaunchScreen.storyboard */; };
-		20DFA9BD271D7AEC00465BE0 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DFA9BC271D7AEC00465BE0 /* ResponseData.swift */; };
-		20DFA9BF271D7BA700465BE0 /* WOWDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DFA9BE271D7BA700465BE0 /* WOWDataController.swift */; };
 		20DFA9C1271D7D4700465BE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DFA9C0271D7D4700465BE0 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,8 +23,6 @@
 		20DFA9AE271D79FE00465BE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20DFA9B1271D79FE00465BE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20DFA9B3271D79FE00465BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20DFA9BC271D7AEC00465BE0 /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
-		20DFA9BE271D7BA700465BE0 /* WOWDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WOWDataController.swift; sourceTree = "<group>"; };
 		20DFA9C0271D7D4700465BE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,7 +71,6 @@
 		20DFA9B9271D7A2900465BE0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				20DFA9BC271D7AEC00465BE0 /* ResponseData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -91,7 +86,6 @@
 		20DFA9BB271D7A3A00465BE0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				20DFA9BE271D7BA700465BE0 /* WOWDataController.swift */,
 				20DFA9C0271D7D4700465BE0 /* ViewController.swift */,
 			);
 			path = Controller;
@@ -169,8 +163,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				20DFA9C1271D7D4700465BE0 /* ViewController.swift in Sources */,
-				20DFA9BD271D7AEC00465BE0 /* ResponseData.swift in Sources */,
-				20DFA9BF271D7BA700465BE0 /* WOWDataController.swift in Sources */,
 				20DFA9A6271D79F800465BE0 /* AppDelegate.swift in Sources */,
 				20DFA9A8271D79F800465BE0 /* SceneDelegate.swift in Sources */,
 			);
